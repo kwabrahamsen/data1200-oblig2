@@ -1,0 +1,154 @@
+/* --- Elements --- */
+h1 {
+    font-family: ltc-caslon-pro, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 6em;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+h2, h3 {
+    font-family: urw-antiqua, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h2 {
+    color: #ffae03;
+    margin: 50px 0;
+    font-size: 1.4em;
+}
+p {
+    line-height: 1.4em;
+}
+header p {
+    margin: 0 0 0 130px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: overline black;
+}
+header h2 {
+    margin-bottom: 0;
+}
+header {
+    width: 80%;
+    margin: auto;
+}
+main {
+    width: 80%;
+    margin: auto;
+}
+main h2 {
+    text-align: center;
+    padding: 5px 0;
+    text-decoration: underline overline lightgray;
+}
+main h3 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+img {
+    border-radius: 5px;
+}
+/* --- Classes --- */
+.main-image {
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+.vertical-line{
+    color: #ffae03;
+}
+.image-text {
+    font-style: italic;
+    font-weight: bold;
+}
+.column-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 0;
+}
+.column {
+    max-width: 30%;
+    margin: 10px 0 10px;
+    padding: 0 10px;
+}
+.column-wide {
+    max-width: 65%;
+    margin: 10px 0 100px;
+    padding: 0 10px;
+}
+.border-left {
+    border-left: 1px solid lightgray;
+}
+.border-right {
+    border-right: 1px solid lightgray;
+}
+.image-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.image {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+    object-fit: contain;
+}
+.image-portrait {
+    width: 48%;
+    margin: 10px 0;
+    object-fit: contain;
+}
+.yellow-block {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fcde9c;
+    border-radius: 5px;
+}
+.yellow-element {
+    width: 48%;
+}
+/* --- IDs --- */
+#meta {
+    font-size: 1.4em;
+    text-align: center;
+}
+#orange-ruler {
+    margin: 10px 0;
+    height: 8px;
+    border-radius: 2px;
+    border: none;
+    background-color: #ffae03;
+}
+
+@media(max-width: 1050px) {
+    .main-image {
+        margin-bottom: 0;
+    }
+    .column-container {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .column {
+        min-width: 100%;
+        margin-bottom: 0;
+    }
+    .column-wide {
+        min-width: 100%;
+    }
+    .border-left {
+        border: none;
+    }
+    .border-right {
+        border: none;
+    }
+}
